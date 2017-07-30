@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p{width: 300px;border: 1px solid black;font-size: 12px;line-height: 30px;padding: 10px}
+        /*选择第一段*/
+        p:first-line{background: red;}
+        /*选择第一个字符,会出现问题  第一个字符选不中*/
+        p:first-letter{font-size: 24px;}
+        /*选中文字之后的变化注意双冒号*/
+        p::selection{background: orange;color: green}
+        /*afert before*/
+        p:before{content: '你好';border: 2px solid black}
+        /*not排除某一项*/
+        h1:not(.hh){background: red}
+    </style>
+</head>
+<body>
+<p>今天是你的生日我的中国清晨我放飞一群白鸽不要问我的家是不是有神话我知道树上住着百乐你将殷殷期望化作窗前的月光
+越过山高水长照在游资的身上你用暖暖目光护送我飞向远方小小一颗寸草心让我梦里累成航</p>
+<h1>大家好</h1>
+<h1 class="hh">我们好</h1>
+<h1>你们好</h1>
+</body>
+</html>

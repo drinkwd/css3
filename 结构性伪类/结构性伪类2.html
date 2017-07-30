@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p{height: 30px;border: 1px solid black;}
+        /*nth-last-child==last-child他是从后往前找*/
+        p:nth-last-child(2){background: red}
+        /*找到p标签父级下的第几个p标签nth-of-type=first-of-type*/
+        p:nth-of-type(2){background: red}
+        /*empty找到元素没有子节点 子节点包含文本节点*/
+        p:empty{background: red;}
+    </style>
+</head>
+<body>
+<p></p>
+<p>p2</p>
+<p>p3</p>
+<p>p4</p>
+<p><span></span></p>
+</body>
+</html>

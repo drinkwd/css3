@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*起点不能使度数*/
+        .box{
+            height: 300px;
+            width: 300px;
+            background: -webkit-radial-gradient(top left,circle,red 30px,blue 40px);
+        }
+    </style>
+</head>
+<body>
+<!--radial-gradient([<起点>]? [<形状> || <大小>,]? <点>, <点>…);
+起点：可以是关键字（left,top,right,bottom），具体数值或百分比
+形状： ellipse、circle
+大小 :具体数值或百分比，也可以是关键字（最近端，最近角，最远端，最远角，包含或覆盖 (closest-side, closest-corner, farthest-side, farthest-corner, contain or cover)）;
+注意firefox目前只支持关键字
+-->
+<div class="box"></div>
+</body>
+</html>

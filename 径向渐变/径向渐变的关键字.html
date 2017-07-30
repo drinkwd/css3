@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{height: 200px;width: 200px;border: 1px solid black;margin: 10px;float: left}
+        .box:nth-of-type(1){background: -webkit-radial-gradient(100px 50px,closest-side,red,blue);}
+        .box:nth-of-type(5){background: -webkit-radial-gradient(100px 50px,contain ,red,blue);}
+        .box:nth-of-type(2){background: -webkit-radial-gradient(100px 50px,closest-corner,red,blue);}
+        .box:nth-of-type(3){background: -webkit-radial-gradient(100px 50px,farthest-side,red,blue);}
+        .box:nth-of-type(4){background: -webkit-radial-gradient(100px 50px,farthest-corner,red,blue);}
+    </style>
+</head>
+<body>
+<!--关键字（最近端，最近角，最远端，最远角，包含或覆盖
+(closest-side, closest-corner, farthest-side, farthest-corner, contain or cover)）;
+注意firefox目前只支持关键字-->
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+
+</body>
+</html>

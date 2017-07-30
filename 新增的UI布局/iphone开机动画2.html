@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{background:#000;text-align: center;font-size: 50px;line-height: 200px;font-family: '微软雅黑';}
+        h1{display:inline-block;color: rgba(255,255,255,0.3);
+            background: -webkit-linear-gradient(-30deg,rgba(255,255,255,0) 100px
+            ,rgba(255,255,255,1) 180px,rgba(255,255,255,1) 240px,rgba(255,255,255,0) 300px) no-repeat -300px 0;
+            -webkit-background-clip: text;}
+    </style>
+    <script>
+        window.onload=function () {
+            var aH1=document.getElementsByTagName('h1')[0];
+            var timer=null;
+            var iLeft=-300;
+            function tomove() {
+                clearInterval(timer);
+                timer=setInterval(function () {
+
+                    iLeft+=5;
+                    if(iLeft==1000)
+                    {
+                        iLeft=-300;
+                        clearInterval(timer);
+                    }
+                    aH1.style.backgroundPosition=iLeft+'px 0px';
+                },20);
+            }
+            setInterval(tomove,10000);
+            tomove();
+
+
+        }
+    </script>
+</head>
+<body>
+<h1>MIAOV课堂开机动画</h1>
+</body>
+</html>

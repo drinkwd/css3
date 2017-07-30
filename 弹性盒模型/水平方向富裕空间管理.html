@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*display:box一定要加浏览器内核前缀 webkit o mzo*/
+        /*box-pack 对盒子富裕的空间进行管理
+            Start 所有子元素在盒子左侧显示，富裕空间在右侧
+            End 所有子元素在盒子右侧显示，富裕空间在左侧
+            Center 所有子元素居中
+            Justify 富余空间在子元素之间平均分布
+*/
+        .box{height: 100px;border: 10px solid black;padding: 10px;display: -webkit-box;
+            -webkit-box-direction:Reverse;
+            -webkit-box-pack: justify;
+        }
+        .box div{width: 100px;height: 100px;background: red ;border: 1px solid #ffffff}
+    </style>
+</head>
+<body>
+<div class="box">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+</div>
+</body>
+</html>

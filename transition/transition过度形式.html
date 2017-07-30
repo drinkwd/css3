@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*第二个参数是需要过度的属性默认是all*/
+        .box{width: 100px;height: 100px;background: red;  transition: 1s width ease-in;}
+        .box:hover{background: blue;width: 200px;height: 200px;}
+    </style>
+</head>
+<body>
+<!--transition-property  要运动的样式  （all || [attr] || none）
+    transition-duration 运动时间
+    transition-delay 延迟时间
+    transition-timing-function 运动形式
+    ease：（逐渐变慢）默认值
+    linear：（匀速）
+    ease-in：(加速)
+    ease-out：（减速）
+    ease-in-out：（先加速后减速）
+    cubic-bezier 贝塞尔曲线（ x1, y1, x2, y2 ） http://matthewlein.com/ceaser/
+-->
+<div class="box"></div>
+</body>
+</html>

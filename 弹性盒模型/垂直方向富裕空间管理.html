@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*box-align 在垂直方向上对元素的位置进行管理
+                    Star 所有子元素在据顶
+                    End 所有子元素在据底
+                    Center 所有子元素居中
+*/
+        /*在页面中水平垂直居中
+        */
+        html{height: 100%;}
+        body{margin: 0;height: 100%}
+        .box{height: 100%;display: -webkit-box;
+            -webkit-box-direction:Reverse;
+            -webkit-box-align: center;
+            -webkit-box-pack: center;
+        }
+        .box div{width: 100px;height: 100px;background: red ;border: 1px solid #ffffff}
+    </style>
+</head>
+<body>
+<div class="box">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+</div>
+</body>
+</html>

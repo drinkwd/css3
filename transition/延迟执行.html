@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*第二个参数是需要过度的属性默认是all*/
+        .box{width: 100px;height: 100px;background: red;  transition: 1s width ,2s 1s height;}
+        .box:hover{background: blue;width: 200px;height: 200px;}
+        /*延迟时间就是在transition时间后面再加一个时间 */
+    </style>
+</head>
+<body>
+<div class="box"></div>
+</body>
+</html>

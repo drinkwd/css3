@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*/*创建3d空间-webkit-transform-style: preserve-3d;*//*-webkit-perspective:50px;进大远小景深*/
+        .box{width: 100px;height: 100px;padding: 100px;border: 5px solid black;margin: 30px auto;
+            -webkit-transform-style: preserve-3d;-webkit-perspective:100px;}
+        .div{width: 100px;
+            height: 100px;background: red;transition: 1s;}
+        .box:hover .div{-webkit-transform: rotateY(180deg)}
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="div">111</div>
+</div>
+</body>
+</html>

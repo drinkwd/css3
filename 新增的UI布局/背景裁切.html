@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*边框透明之后显示的是元素背景但是有的时候不想让他透明之后背景显示在边框上*/
+        .box{width: 300px;height: 300px;background: url("../img/miaov.jpg");
+        border: 30px solid rgba(0,0,0,0.5);background-clip: content-box; }
+        /*/*border-box边框左上角显示背景
+            content-box内容左上角显示背景
+            padding-box padding左上角显示背景
+        */*/
+    </style>
+</head>
+<body>
+<div class="box"></div>
+</body>
+</html>

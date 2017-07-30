@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @-moz-keyframes move {
+            0%{
+                width: 100px;
+            }
+            100%{
+                width: 500px;
+            }
+        }
+        @-webkit-keyframes move {
+            0%{
+                width: 100px;
+            }
+            100%{
+                width: 500px;
+            }
+        }
+        @keyframes move {
+            0%{
+                width: 100px;
+            }
+            100%{
+                width: 500px;
+            }
+        }
+        .box{width: 100px;height: 100px;background: red;}
+        .move{-moz-animation: 2s 1s move;
+            -webkit-animation: 2s move;animation: 2s move ;width: 500px}
+ </style>
+    <script>
+        window.onload=function () {
+            var oBox=document.getElementById('box');
+            oBox.onclick=function () {
+                this.className="box move";
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="box" id="box"></div>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*display:box一定要加浏览器内核前缀 webkit o mzo*/
+        .box{height: 100px;border: 10px solid black;padding: 10px;display: -webkit-box;
+        /*默认横向-webkit-box-orient: vertical;*/
+            /*排列方向-webkit-box-direction:Reverse;*/
+        }
+        .box div{width: 100px;height: 100px;background: red ;border: 1px solid #ffffff}
+    </style>
+</head>
+<body>
+<div class="box">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+</div>
+</body>
+</html>

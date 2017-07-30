@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{width: 100px;height: 100px;background: red;transition: 1s;}
+        .box:hover{-webkit-transform: matrix(1,0,0,1,0,0);}
+    </style>
+
+</head>
+<body>
+<!--
+    缩放：
+    x轴缩放 a=x*a    c=x*c     e=x*e;
+    y轴缩放 b=y*b    d=y*d      f=y*f;
+    x轴斜切: c=Math.tan(xDeg/180*Math.PI)
+    y轴斜切: b=Math.tan(yDeg/180*Math.PI)
+
+    旋转：
+    a=Math.cos(deg/180*Math.PI);
+    b=Math.sin(deg/180*Math.PI);
+    c=-Math.sin(deg/180*Math.PI);
+    d=Math.cos(deg/180*Math.PI);
+
+-->
+<div class="box" id="box"></div>
+<script>
+    var oBox=document.getElementById('box');
+    oBox.onclick=function () {
+        oBox.style.WebkitTransform='matrix(0.5,0,0,1,0,0)';
+        oBox.style.MozTransform='matrix(0.5,0,0,1,0,0)';
+        oBox.style.transform='matrix(0.5,0,0,1,0,0)';
+        oBox.style.filter="progid:DXImageTransform.Microsoft.Matrix( M11= 0.5, M12= 0, M21= 0 , M22=0.2,SizingMethod='auto expand')";
+
+
+    }
+</script>
+</body>
+</html>

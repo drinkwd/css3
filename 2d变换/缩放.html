@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{height: 400px;border: 1px solid black}
+        .box{width: 100px;height: 100px;background: red;margin: 100px auto;transition: 1s;}
+        body:hover .box:nth-of-type(1){-webkit-transform: scale(2)}
+        /*如果想X轴Y轴都缩放中间用逗号分隔开scale（x,y）*/
+    </style>
+</head>
+<body>
+<div class="box"></div>
+</body>
+</html>

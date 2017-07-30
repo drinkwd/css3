@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        label{position: relative}
+        input{position: absolute;top:-50px;left: -50px}
+        span{width: 20px;height: 20px;border: 2px solid black;float: left;margin-right: 5px}
+        input:checked~span{background: red;}
+    </style>
+</head>
+<body>
+<label >
+    <input type="radio" name="tab" />
+    <span></span>
+</label>
+<label >
+    <input type="radio" name="tab" />
+    <span></span>
+</label>
+<label >
+    <input type="radio" name="tab" />
+    <span></span>
+</label>
+</body>
+</html>

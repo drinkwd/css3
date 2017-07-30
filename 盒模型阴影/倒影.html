@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*只在chrome下实现了box-reflect 倒影
+            direction  方向     above|below|left|right;
+            距离
+                渐变（可选）
+*/
+        img{display:block;margin: 30px auto;
+            -webkit-box-reflect: right 10px -webkit-linear-gradient(right,rgba(0,0,0,0.5) 0,rgba(0,0,0,0) 100%)
+        ;}
+    </style>
+</head>
+<body style="background: #000">
+<img src="../img/img1.jpg"/>
+</body>
+</html>

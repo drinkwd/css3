@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{width: 100px;height: 100px;
+            /*要设置边框的样式否则不好使加上-webkit-之后内容部分也被填充*/
+            border: 20px solid;-webkit-border-image: url("../img/border.png") 26 27 repeat repeat }
+    </style>
+</head>
+<body>
+<!--
+        边框图片 border-image
+        border-image-sourceg 引入图片
+        border-image-slice 切割图片
+        border-image-width 边框宽度
+        border-image-repeat 图片的排列方式
+        round 重复,repeat平铺 ,默认stretch拉伸
+        边框颜色 border-colors
+-->
+<div class="box"></div>
+</body>
+</html>

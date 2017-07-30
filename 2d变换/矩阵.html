@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{width: 100px;height: 100px;background: red;transition: 1s;}
+        .box:hover{-webkit-transform: matrix(1,0,0,1,0,0);}
+    </style>
+</head>
+<body>
+<!--
+学习的目的主要是解决IE兼容的问题
+标准下矩阵：
+matrix(1,0,0,1,0,0)
+matrix(a,b,c,d,e,f)
+IE下:
+progid:DXImageTransform.Microsoft.Matrix( M11= 1, M12= 0, M21= 0 , M22=1,SizingMethod='auto expand');
+IE下的矩阵没有E和F两个参数 M11==a; M12==c; M21==b; M22==d
+-->
+
+
+<div class="box"></div>
+</body>
+</html>

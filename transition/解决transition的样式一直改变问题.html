@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{width: 100px;height: 100px;background: red;  transition: 1s width;}
+    </style>
+    <script>
+        window.onload=function () {
+            var oBox=document.getElementById('box');
+            oBox.onclick=function () {
+                //还是会触发transition因为只要要是发生改变就会触发transition
+                this.style.width=this.offsetWidth+100+'px';
+                addEnd(oBox,end);
+            }
+
+            function end() {
+                this.style.width=this.offsetWidth+100+'px';
+                removeend(this,end);
+            }
+            //过度结束之后事件
+            function addEnd(obj,fn)
+            {
+                obj.addEventListener('WebkitTransitionEnd',fn,false);
+                obj.addEventListener('transitionend',fn,false);
+            }
+            function removeend(obj,fn) {
+                obj.removeEventListener('WebkitTransitionEnd',fn,false);
+                obj.removeEventListener('transitionend',fn,false);
+            }
+
+        };
+
+
+    </script>
+</head>
+<body>
+<!--Webkit内核： obj.addEventListener('webkitTransitionEnd',function(){},false);
+firefox: obj.addEventListener('transitionend',function(){},false);
+-->
+<div class="box" id="box"></div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p{height: 30px;border: 1px solid black;}
+        /*nth-child找到父级下第几个子节点*/
+        /*1表示第一个*/
+        /*找到p标签父级下的子节点并且这个节点害得是p标签如果不是就显示不出来*/
+        /*p:nth-child(1){background: red}*/
+        /*odd奇数选择器*/
+        /*中间可以传递表达式例如2n-1*/
+        /*p:nth-child(odd){background: red}*/
+        /*也可以这么写*/
+        body *:nth-child(2){background: red;}
+    </style>
+</head>
+<body>
+<p>p1</p>
+<p>p2</p>
+<p>p3</p>
+<p>p4</p>
+<p>p5</p>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{width: 400px;height: 400px;margin: 30px auto;transition: 3s}
+        .box div{width: 180px;height: 180px;margin: 10px;border: 1px solid black;float: left;
+        box-sizing: border-box;background: blue;}
+        .box div:nth-of-type(1),.box div:nth-of-type(4){border-radius:0  60%}
+        .box div:nth-of-type(2),.box div:nth-of-type(3){border-radius: 60% 0}
+        .box:hover{-webkit-transform:rotate(720deg)}
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

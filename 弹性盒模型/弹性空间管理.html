@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*display:box一定要加浏览器内核前缀 webkit o mzo*/
+        .box{height: 100px;border: 10px solid black;padding: 10px;display: -webkit-box;
+        }
+        .box div{width: 100px;height: 100px;background: red ;border: 1px solid #ffffff}
+        /*子元素的尺寸=盒子的尺寸*子元素的box-flex属性值 / 所有子元素的box-flex属性值的和
+        如果其中一个有宽度就用大盒子的宽度减去他当作大盒子的宽度
+*/
+        .box div:nth-of-type(1){-webkit-box-flex: 1}
+        .box div:nth-of-type(2){-webkit-box-flex: 1 }
+        .box div:nth-of-type(3){-webkit-box-flex: 1}
+        .box div:nth-of-type(4){-webkit-box-flex: 1}
+        .box div:nth-of-type(5){-webkit-box-flex: 1}
+    </style>
+</head>
+<body>
+<div class="box">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p{
+            height: 30px;border: 1px solid rebeccapurple;}
+        /*p[miaov]{background: red;}*/
+        /*p[miaov=leo]{background: red;}*/
+        /*p[miaov~=old]{background: red;} */
+        /*以x开头*/
+        /*p[miaov^=x]{background: red;}*/
+        /*以h结尾*/
+        /*p[miaov$=h]{background: red;}*/
+        /*包含指定的value*/
+        /*p[miaov*=l]{background: red;}*/
+        /*表示以x-开始或者value是l*/
+        p[miaov|=x]{background: red;}
+    </style>
+</head>
+<body>
+    <p miaov="leo old">leo</p>
+    <p miaov="lh">lh</p>
+    <p miaov="x-l">xl</p>
+    <p miaov="xm">xm</p>
+</body>
+</html>
